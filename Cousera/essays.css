@@ -1,0 +1,61 @@
+body{
+    background-color: darkkhaki;
+}
+
+body>h1{
+    text-align: center;
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/61Apu9sLZaL._SY355_.jpg");
+    height: 200px;
+    
+}
+
+li{
+    color: yellow;
+    list-style: none;
+    
+}
+section h3{
+    color: blue;
+    text-align: center;
+    background-color: coral;
+    height: 20px;
+}
+
+section h1{
+    text-align: left;
+}
+
+li a:link, li a:visited{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(213, 247, 247);
+    border: 1px darkcyan;
+    color: grey;
+    display: block;
+    width: 250px;
+    margin-bottom: 6px;
+
+}
+li a:hover{
+    background-color: darkolivegreen;
+    color: honeydew;
+}
+li a:active{
+    background-color: floralwhite;
+    color: grey;
+}
+body>h2>a{
+    text-decoration: none;
+    text-align: center;
+}
+body>h2>a:link, body>h2>a:visited{
+    background-color:white;
+    border:0.3px solid;
+    color:black;
+    display: block;
+    width: 300px;
+}
+body>h2>a:hover, body>h2>a:active{
+    background-color: blue;
+    color: cornsilk;
+}
