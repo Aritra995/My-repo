@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+#header-nav{
+    background-color: blue;
+    border: 0;
+    border-radius: 0;
+}
+.nav-brand{
+    color: cornsilk;
+    text-shadow: 0px 2px 3px grey;
+    font-size: 2em;
+    line-height: 0.75;
+    font-family: 'Lora', serif;
+}
+body{
+    background-color: #f6b319;
+}
+h1{
+    color: maroon;
+    text-shadow: 0px 2px 3px grey;
+    font-family: 'Lora', serif;
+    padding-bottom: 20px;
+}
+#chicken{
+    background-color: maroon;
+    margin-bottom: 20px;
+    border: 2px solid maroon;
+    margin-top: 5px;
+}
+
+#beef{
+    background-color: maroon;
+    margin-bottom: 20px;
+    border: 2px solid maroon
+}
+#sushi{
+    background-color: maroon;
+    margin-bottom: 20px;
+    border: 2px solid maroon
+}
+#chicken h3, #beef h3, #sushi h3{
+    text-transform: uppercase;
+    font-family: 'Lora', serif;
+    text-shadow: 0px 2px 3px black;
+    color: mintcream;
+}
+#chicken p, #beef p, #sushi p{
+    color: mintcream;
+    padding: 20px;
+}
+#chicken:hover, #beef:hover, #sushi:hover{
+    box-shadow: 10px 10px 10px;
+}
+#arrow{
+    text-decoration: none;
+    font-size: 2.5em;
+    color: orange;
+    vertical-align: middle;
+    text-align: right;
+}
+#nav-list>li>a{
+    font-size: 1.2em;
+    color: mintcream;
+}
+#nav-list>li>a:hover{
+    background-color: burlywood;
+    color: darkred;
+}
+#nav-list>li>#bara:hover, #nav-list>li>#cara:hover, #nav-list>li>#dara:hover{
+    font-size: 1.6em;
+    text-shadow: 0px 2px 3px grey;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid orange;
+  }
+
+/*Extra small Devices*/
+@media (max-width: 767px){
+
+    
+    #header{
+        height: 60px;
+    }
+    #main-content{
+        margin: 30px;
+    }
+    .nav-brand{
+        font-size: 5vw;
+        margin-bottom: 10px;
+    }
+
+}

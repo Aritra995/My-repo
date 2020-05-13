@@ -1,0 +1,124 @@
+body>.container-fluid>.row>div>h1{
+    font-size: 3em;
+    text-align: center;
+    color:black;
+    background-color: darkorange;
+    display: block;
+    padding: o;
+    margin-top: 15px;
+}
+body{
+    background-color: darkkhaki;
+    padding-right: 0;
+}
+*{
+    box-sizing: border-box;
+}
+body>.container-fluid>.row>{
+    position: relative;
+}
+ul{
+    position: relative;
+    top:10px;
+}
+li a:link, li a:visited{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(213, 247, 247);
+    border: 1px darkcyan;
+    color: grey;
+    display: block;
+    width: 250px;
+    margin-bottom: 6px;
+
+}
+li{
+    list-style: none;
+}
+li a:hover{
+    background-color: darkolivegreen;
+    color: honeydew;
+}
+li a:active{
+    background-color: floralwhite;
+    color: grey;
+}
+body>.container-fluid>.row>div>h2>a{
+    text-decoration: none;
+    text-align: center;
+}
+body>.container-fluid>.row>div>h2>a:link, body>.container-fluid>.row>div>h2>a:visited{
+    background-color:white;
+    border:0.3px solid;
+    color:black;
+    display: block;
+    width: 200px;
+}
+body>.container-fluid>.row>div>h2>a:hover{
+    background-color: blue;
+    color: cornsilk;
+}
+body>.container-fluid>.row>div>h2>a:active{
+    background-color: burlywood;
+    color: darkslategrey;
+}
+
+body>.container-fluid>.row>div>h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body>.container-fluid>.row>div>#DOGS>h2{
+    text-align: center;
+    background-color: coral;
+}
+body>.container-fluid>.row>div>#DOGS>p{
+    font-size: 150%;
+}
+body>.container-fluid>.row>div>#DOGS>img{
+    margin-bottom: 10px;
+    
+
+}
+body>.container-fluid>.row>div>#CATS>h2{
+    text-align: center;
+    background-color: coral;
+}
+body>.container-fluid>.row>div>#CATS>p{
+    font-size: 150%;
+}
+body>.container-fluid>.row>div>#CATS>img{
+    margin-bottom: 10px;
+
+}
+
+body>.container-fluid>.row>div>#RABBIT>h2{
+    text-align: center;
+    background-color: coral;
+}
+body>.container-fluid>.row>div>#RABBIT>p{
+    font-size: 150%;
+}
+body>.container-fluid>.row>div>#RABBIT>img{
+    margin-bottom: 10px;
+
+}
+body>.container-fluid>.row>div>#LAMBORGHINI>h2{
+    text-align: center;
+    background-color: coral;
+}
+body>.container-fluid>.row>div>#AUDI>h2{
+    text-align: center;
+    background-color: coral;
+}
+body>.container-fluid>.row>div>#LAMBORGHINI>p{
+    font-size: 150%;
+}
+body>.container-fluid>.row>div>#LAMBORGHINI>img{
+    margin-bottom: 10px;
+
+}
+body>.container-fluid>.row>div>#AUDI>p{
+    font-size: 150%;
+}
+body>.container-fluid>.row>div>#AUDI>img{
+    margin-bottom: 10px;
+}
