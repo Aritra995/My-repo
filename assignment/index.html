@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="MenuApp">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MenuApp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+        <script src="Angular/angular.min.js"></script>
+        <script src="Angular/angular-ui-router.min.js"></script>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <ul class="nav nav-pills nav-justified pull-right">
+                    <li ui-sref='home' ui-sref-active="active" role="presentation"><a href="#">HOME</a></li>
+                    <li ui-sref='category' ui-sref-active="active" role="presentation"><a href="#">Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <ui-view></ui-view>
+        </div>
+
+        <script src="modules/menuapp.module.js"></script>
+        <script src="modules/data.moduls.js"></script>
+        <script src="routes.js"></script>
+        <script src="controllers/menuapp.categoriescontroller.js"></script>
+        <script src="controllers/menuapp.itemscontroller.js"></script>
+        <script src="components/categoriescomponent.js"></script>
+        <script src="components/itemscomponent.js"></script>
+        <script src="services/menudata.service.js"></script>
+    </body>
+</html>

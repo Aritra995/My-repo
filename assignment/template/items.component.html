@@ -1,0 +1,14 @@
+
+<div class="row">
+    <div ng-repeat="items in $ctrl.items">
+        <div class="clearfix" ng-if="$index % 2 == 0"></div>
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <h2> {{items.name}} </h2>
+                <h3> {{items.short_name}} </h3>
+                <p> {{items.description}} </p>
+                <h3> Price : ${{items.price_large}} </h3>
+            </div>
+        </div>
+    </div>
+</div>
