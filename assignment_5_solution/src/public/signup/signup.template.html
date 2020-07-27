@@ -1,0 +1,51 @@
+<div class="container">
+    <h1 class="text-center">Signup As a Verified User</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form name="signupform" class="form-vertical" ng-submit="signupCtrl.signup(signupform)" novalidate>
+                <div class="form-group" ng-class="{'has-error' : signupform.firstname.$error.required && (!signupform.firstname.$pristine || signupform.$submitted)}">
+                    <label for="firstname">First name *</label>
+                    <input type="text" name="firstname" class="form-control" id="exampleInputEmail1" placeholder="Firstname" ng-model="signupCtrl.user.firstname" required>
+                    <span ng-show="signupform.firstname.$error.required && (!signupform.firstname.$pristine || signupform.$submitted)" class="help-block">Please Enter your Firstname</span>
+                </div>
+                <div class="form-group" ng-class="{'has-error' :signupform.lastname.$error.required && (!signupform.lastname.$pristine || signupform.$submitted)}">
+                    <label for="lastname">Last name *</label>
+                    <input type="text" name="lastname" class="form-control" id="exampleInputEmail1" placeholder="Lastname" ng-model="signupCtrl.user.lastname" required>
+                    <span ng-show="signupform.lastname.$error.required && (!signupform.lastname.$pristine || signupform.$submitted)" class="help-block">Please Enter your Lastname</span>
+                </div>
+                <div class="form-group" ng-class="{'has-error' : signupform.emailid.$error.required && (!signupform.emailid.$pristine || signupform.$submitted) || signupform.emailid.$error.email}">
+                    <label for="exampleInputEmail1">Email address *</label>
+                    <input type="email" name="emailid" class="form-control" id="exampleInputEmail1" placeholder="handle@domain.com" ng-model="signupCtrl.user.emailid" required>
+                    <span ng-show="signupform.emailid.$error.required && (!signupform.emailid.$pristine || signupform.$submitted)">Please Enter your email address</span>
+                    <span ng-show="signupform.emailid.$error.email" class="help-block">Please enter a valid email address</span>
+                </div>
+                <div class="form-group" ng-class="{'has-error' : signupform.phone.$error.required && (!signupform.phone.$pristine || signupform.$submitted) || (signupform.phone.$error.minlength || signupform.phone.$error.maxlength)}">
+                    <label for="phone">Phone number *</label>
+                    <input type="number" name="phone" class="form-control" id="exampleInputEmail1" placeholder="XXX-XXX-XXX" ng-model="signupCtrl.user.phone" ng-minlength="9" ng-maxlength="9" required>
+                    <span ng-show="signupform.phone.$error.required && (!signupform.phone.$pristine || signupform.$submitted)">Please Enter your phone number</span>
+                    <span ng-show="signupform.phone.$error.minlength || signupform.phone.$error.maxlength">Phone number must be 9 digits long</span>
+                </div>
+                <div class="form-group" ng-class="{'has-error' : signupCtrl.showerror}">
+                    <label for="favoritedish">Favorite Dish</label>
+                    <input type="text" name="favoritedish" class="form-control" id="exampleInputEmail1" placeholder="menu-shortname" ng-model="signupCtrl.user.favoritedish">
+                    <span ng-show="signupCtrl.showerror" class="help-block" class="text-danger">That dish doesn't exist</span>
+                </div>
+    
+                <div class="form-group">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                </div>
+    
+                <input type="submit" class="btn btn-success btn-lg" value="submit">
+                <span ng-show="signupCtrl.showmessage" class="text-success">Signed In!Your information have been saved</span>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
